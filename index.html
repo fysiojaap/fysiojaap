@@ -243,6 +243,14 @@ body.v2 {
 .v2 .band__photo {
   aspect-ratio: 4/5;
   position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.v2 .band__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .v2 .band__photo .photo-ph__label { color: var(--ink-2); }
 .v2 .band__tag {
@@ -463,7 +471,7 @@ body.v2 {
 
     <div class="hero__art">
       <div class="hero__disc">
-        <img class="hero__avatar" src="../assets/jaap-avatar.png" alt="Jaap Leemeijer">
+        <img class="hero__avatar" src="assets/jaap-avatar.png" alt="Jaap Leemeijer">
       </div>
       <div class="hero__badge hero__badge--1"><strong>Jaap</strong>MSc · 7 jaar</div>
       <div class="hero__badge hero__badge--2"><strong>Adem + lichaam</strong>samen</div>
@@ -515,11 +523,8 @@ body.v2 {
 <section class="story" id="verhaal">
   <div class="stage">
     <div class="band">
-      <div class="photo-ph band__photo">
-        <div class="photo-ph__label">
-          <span>Foto · Spreekkamer met daglicht</span>
-          <span class="photo-ph__tag">4×5 · rust</span>
-        </div>
+      <div class="band__photo">
+        <img src="assets/jaap-portrait.png" alt="Jaap Leemeijer in de spreekkamer">
         <span class="band__tag">Stap 01</span>
       </div>
       <div>
@@ -531,11 +536,8 @@ body.v2 {
     </div>
 
     <div class="band band--flip">
-      <div class="photo-ph band__photo">
-        <div class="photo-ph__label">
-          <span>Foto · Ademoefening, detail</span>
-          <span class="photo-ph__tag">4×5 · hands</span>
-        </div>
+      <div class="band__photo">
+        <img src="assets/jaap-portrait.png" alt="Jaap bij een ademoefening">
         <span class="band__tag">Stap 02</span>
       </div>
       <div>
@@ -547,11 +549,8 @@ body.v2 {
     </div>
 
     <div class="band">
-      <div class="photo-ph band__photo">
-        <div class="photo-ph__label">
-          <span>Foto · Jaap in sessie met cliënt</span>
-          <span class="photo-ph__tag">4×5 · warm</span>
-        </div>
+      <div class="band__photo">
+        <img src="assets/jaap-portrait.png" alt="Jaap in sessie met cliënt">
         <span class="band__tag">Stap 03</span>
       </div>
       <div>
@@ -642,7 +641,7 @@ body.v2 {
         <address><strong>Beethovenlaan 32</strong>5216 XL · 's-Hertogenbosch</address>
         <p>45–60 minuten. Gesprek, onderzoek, concrete oefeningen. Je gaat naar huis met iets om mee te nemen — nooit alleen huiswerk-bestanden.</p>
         <div class="session-card__foot">
-          <span class="session-card__price">€ 85 <small>/ sessie</small></span>
+          <span class="session-card__price">€ 120 <small>/ sessie</small></span>
           <a href="#" class="btn btn--fill">Plan gesprek →</a>
         </div>
       </article>
@@ -652,7 +651,7 @@ body.v2 {
         <address><strong>Nederland &amp; België</strong>Beveiligde videoverbinding</address>
         <p>Gesprek, ademhalings- en ontspanningswerk werken prima via video. Hands-on onderzoek nodig? Dat bespreken we in de intake.</p>
         <div class="session-card__foot">
-          <span class="session-card__price">€ 75 <small>/ sessie</small></span>
+          <span class="session-card__price">€ 120 <small>/ sessie</small></span>
           <a href="#" class="btn btn--ghost">Plan online →</a>
         </div>
       </article>
